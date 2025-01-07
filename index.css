@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins";
+}
+
+.page {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(bg.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.page,
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border: 2px solid #DDDDDD;
+    border-radius: 15px;
+}
+
+.heading {
+    justify-content: start;
+    gap: 20px;
+}
+
+.heading h2 {
+    font-size: xx-large;
+    font-weight: 500;
+    color: #464646;
+}
+
+.input {
+    height: 50px;
+    width: 500px;
+    margin: 20px 0px;
+    background-color: #E4E4E4;
+    border-radius: 30px;
+}
+
+.input input {
+    height: 100%;
+    border: none;
+    border-radius: 30px;
+    padding: 0px 20px;
+    width: 80%;
+    font-size: 17px;
+    background-color: transparent;
+    box-sizing: border-box;
+    border: 2px solid #E4E4E4;
+}
+
+.input button {
+    background-color: #0094FF;
+    border: 2px solid white;
+    border-radius: 30px;
+    font-size: 17px;
+    color: white;
+    width: 19%;
+    height: 100%;
+}
+
+.list {
+    padding: 0px 30px;
+    max-width: 400px;
+    cursor: pointer;
+}
+
+.list li {
+    font-size: 18px;
+    position: relative;
+    word-break: break-all;
+}
+
+.list li::before {
+    content: "";
+    color: #292929;
+    position: absolute;
+    background-image: url(unCheck.svg);
+    background-position: center;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    left: -30px;
+    top: 4px;
+    bottom: 0px;
+}
+
+.list li.check{
+    text-decoration: line-through;
+}
+
+.list li.check::before{
+    background-image: url(check.svg);
+}
+
+.list li span{
+    font-size: 30px ;
+    font-weight: 300;
+    position: absolute;
+    right: -40px;
+    height: 25px;
+    top: 0px;
+    bottom: 0px;
+    width: 25px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list li span:hover{
+    background-color: #f3f3f3;
+}
+
+@media (max-width: 600px) {
+    .page{
+        background-position: 30%;
+    }
+    .heading h2{
+        font-size: x-large;
+    }
+    .heading img{
+        width: 25px;
+    }
+
+    .input{
+        width: 85vw;
+        height: 45px;
+        margin: 10px 0px;
+    }
+    .input input{
+        width: 70%;
+    }
+    .input button{
+        width: 28%;
+    }
+}
