@@ -7,7 +7,7 @@
 .page {
     width: 100vw;
     height: 100vh;
-    background-image: url(bg.png);
+    background-image: url(image/bg.png);
     background-position: center;
     background-size: cover;
 }
@@ -83,7 +83,7 @@
     content: "";
     color: #292929;
     position: absolute;
-    background-image: url(unCheck.svg);
+    background-image: url(image/unCheck.svg);
     background-position: center;
     background-size: contain;
     width: 20px;
@@ -98,7 +98,7 @@
 }
 
 .list li.check::before{
-    background-image: url(check.svg);
+    background-image: url(image/check.svg);
 }
 
 .list li span{
