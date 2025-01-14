@@ -55,6 +55,7 @@
     background-color: transparent;
     box-sizing: border-box;
     border: 2px solid #E4E4E4;
+    outline: 0;
 }
 
 .input button {
